@@ -4,25 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./app.js" defer></script>
   <link rel="stylesheet" href="./style.css">
   <title>Carousel 1</title>
 </head>
 <body>
   <section aria-label="Newest Photos">
-    <div class="carousel">
-      <button class="carousel__btn prev">&#60;</button>
-      <button class="carousel__btn next">&#62;</button>
-      <ul>
+    <div class="carousel" data-carousel>
+      <button class="carousel__btn prev" data-carousel-button="prev">&#60;</button>
+      <button class="carousel__btn next" data-carousel-button="next">&#62;</button>
+      <ul id="data-slides" data-slides>
         <li class="slide" data-active>
           <img src="../images/cold-morning.jpg" alt="">
         </li>
         <li class="slide">
           <img src="../images/green-nature.jpg" alt="">
         </li>
-        <li class="slide">
+        <li class="slide" id="amin">
           <img src="../images/italy-lake.jpg" alt="">
         </li>
       </ul>
+    </div>
+  </section>
+  <section data-testing>
+    <div>
+      <p data-yoo>random text here and there</p>
+      <p data-yoo>facebasdflkadsfjdsf</p>
+      <p data-yoo>dslfjdlasfjdslf</p>
     </div>
   </section>
 </body>
