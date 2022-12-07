@@ -58,7 +58,7 @@ prevButton.addEventListener('click', () => {
 dotsNav.addEventListener('click', (e) => {
   // what indicator was clicked on?
   const targetDot = e.target.closest('button') // idk why he did use closest here
-
+  console.log(targetDot)
   if(!targetDot) return // means if we don't click on the indicators just return nothing and stop here
 
   const currentSlide = track.querySelector('.current-slide')
